@@ -4,3 +4,66 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* Generics */
+
+
+
+/* Utils */
+
+
+
+/* Header */
+.header-container {
+    height: 100px;
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    width: 70px;
+    height: 25px;
+    border-radius: 5px;
+}
+
+
+/* Main */
+.main-container {
+    width: 100%;
+    height: 740px;
+    background-color: aquamarine;
+    display: flex;
+}
+
+
+/* Footer */
+
+.footer-container {
+    height: 80px;
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.boolean {
+    margin-left: 5px;
+}
