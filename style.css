@@ -7,6 +7,11 @@
 
 /* Generics */
 
+button {
+    width: 70px;
+    height: 25px;
+    border-radius: 5px;
+}
 
 
 /* Utils */
@@ -47,11 +52,6 @@
     justify-content: center;
 }
 
-button {
-    width: 70px;
-    height: 25px;
-    border-radius: 5px;
-}
 
 
 /* Main */
