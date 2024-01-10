@@ -10,7 +10,17 @@
 
 
 /* Utils */
+.d-none {
+    display: none;
+}
 
+.d-block {
+    display: block;
+}
+
+.v-hidden {
+    visibility: hidden;
+}
 
 
 /* Header */
@@ -58,8 +68,8 @@ button {
     width: 600px;
     height: 600px;
     margin: 60px auto;
-    cursor: pointer;
     display: flex;
+    cursor: pointer;
     flex-wrap: wrap;
     align-content: flex-start;
 }
@@ -68,6 +78,9 @@ button {
     height: calc(100% / 10);
     width: calc(100% / 10);
     border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .cell.clicked {
