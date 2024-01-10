@@ -50,6 +50,28 @@ button {
     height: 740px;
     background-color: aquamarine;
     display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#grid {
+    width: 600px;
+    height: 600px;
+    margin: 60px auto;
+    cursor: pointer;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+#grid .cell {
+    height: calc(100% / 10);
+    width: calc(100% / 10);
+    border: 1px solid black;
+}
+
+.cell.clicked {
+    background-color: skyblue;
 }
 
 
