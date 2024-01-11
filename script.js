@@ -27,25 +27,28 @@ const cols = 10;
 const totalCells = rows * cols;
 
 
-// USO UN CICLO PER CREARE LE CELLE
-
-for (let i = 1; i <= totalCells; i++) {
-    const cell = createCell(i);
-
-    // AGGIUNGO UN EVENT LISTENER AL CLICK DELLA CELLA
-    cell.addEventListener("click", (e) => {
-
-        e.target.classList.toggle("clicked");
-        console.log("Hai cliccato la cella numero: ", i);
-    })
-
-    grid.appendChild(cell);
-}
-
 
 // AGGIUNGO UN EVENT LISTENER AL CLICK DEL BOTTONE
 button.addEventListener("click", () => {
 
-    // FACCIO COMPARIRE LA GRIGLIA
-    grid.classList.remove("v-hidden");
+    button.innerText = "Retry"
+
+    grid.innerText = "";
+
+    // USO UN CICLO PER CREARE LE CELLE
+    for (let i = 1; i <= totalCells; i++) {
+        const cell = createCell(i);
+
+        // AGGIUNGO UN EVENT LISTENER AL CLICK DELLA CELLA
+        cell.addEventListener("click", (e) => {
+
+            e.target.classList.toggle("clicked");
+            console.log("Hai cliccato la cella numero: ", i);
+        })
+
+        grid.appendChild(cell);
+    }
 })
+
+
+
